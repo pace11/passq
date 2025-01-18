@@ -1,0 +1,36 @@
+{
+  "name": "@pace11/passq",
+  "version": "1.0.0",
+  "description": "Password Manager CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "passq": "index.js"
+  },
+  "author": "Mhd Iriansyah <rppratama1771@gmail.com> (https://pace11.github.io/me/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pace11/passq.git"
+  },
+  "keywords": [
+    "cli",
+    "command",
+    "password",
+    "password manager",
+    "database"
+  ],
+  "dependencies": {
+    "clipboardy": "^4.0.0",
+    "commander": "^13.0.0",
+    "figlet": "^1.8.0",
+    "sqlite3": "^5.1.7"
+  },
+  "bugs": {
+    "url": "https://github.com/pace11/passq/issues"
+  },
+  "homepage": "https://github.com/pace11/passq#readme",
+  "devDependencies": {}
+}
