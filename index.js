@@ -15,12 +15,7 @@ const program = new Command();
 
 console.log(figlet.textSync("PassQ", { horizontalLayout: "full" }));
 
-program.name("passq").description("Password Manager CLI").version("1.2.1");
-
-program
-  .command("generate-db")
-  .description("Generate the local database for the first time")
-  .action(() => generateDb());
+program.name("passq").description("Password Manager CLI").version("1.3.0");
 
 program
   .command("list")
