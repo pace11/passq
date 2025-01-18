@@ -4,6 +4,3 @@
 # locking
 package-lock.json
 yarn.lock
-
-# database
-**/db/data.db

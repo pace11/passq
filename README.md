@@ -12,16 +12,11 @@
 Using NPM
 ```bash
 # install globally
-$ npm i -g passq
+$ npm i -g @pace11/passq
 ```
 
 ## Command #️⃣
 
-- Generate the local database for the first time
-```bash
-# create database
-$ passq generate-db
-```
 - Insert an existing password
 ```bash
 # insert with existing password
@@ -48,3 +43,7 @@ $ passq delete --id <id>
 # copy a password by id
 $ passq copy --id <id>
 ```
+
+## How secure is the generated password ?
+- Result from [Password Monster](https://www.passwordmonster.com/)
+![Passq](/assets/ss-1.png)

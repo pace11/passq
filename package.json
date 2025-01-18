@@ -1,6 +1,6 @@
 {
   "name": "@pace11/passq",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Password Manager CLI",
   "main": "index.js",
   "scripts": {
