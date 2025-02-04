@@ -1,23 +1,5 @@
 const { db } = require("./connection.js");
 
-const generateDb = () => {
-  db.run(
-    `CREATE TABLE IF NOT EXISTS passwords (
-          id INTEGER PRIMARY KEY AUTOINCREMENT,
-          title TEXT NOT NULL,
-          password TEXT,
-          last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )`,
-    (err) => {
-      if (err) {
-        console.log("Error creating table ❌");
-      } else {
-        console.log("Table created ✅");
-      }
-    }
-  );
-};
-
 /**
  *
  * @param {string} param.id
@@ -70,4 +52,4 @@ const deleteData = ({ id = "" }) => {
   });
 };
 
-module.exports = { generateDb, getData, createData, deleteData };
+module.exports = { getData, createData, deleteData };

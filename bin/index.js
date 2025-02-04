@@ -7,7 +7,7 @@ const { generateRandomPassword } = require("../helpers/index.js");
 
 const program = new Command();
 
-program.name("passq").description("Password Manager CLI").version("1.4.0");
+program.name("passq").description("Password Manager CLI").version("1.4.1");
 
 program
   .command("list")
