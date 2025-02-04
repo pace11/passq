@@ -6,7 +6,6 @@
     - Insert an existing password or generate one randomly using `PassQ` ✅
     - Display a list of passwords or specific by ID ✅
     - Delete a password ✅
-    - Copy a password by ID ✅
 
 ## Installing
 Using NPM
