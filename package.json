@@ -1,6 +1,6 @@
 {
   "name": "@pace11/passq",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "Password Manager CLI",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,6 @@
     "database"
   ],
   "dependencies": {
-    "clipboardy": "^4.0.0",
     "commander": "^13.0.0",
     "figlet": "^1.8.0",
     "path": "^0.12.7",

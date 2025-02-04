@@ -21,27 +21,39 @@ $ npm i -g @pace11/passq
 ```bash
 # insert with existing password
 $ passq create --title <title> --password <password>
+Data created ✅ { id: 1, title: 'password', password: 'admin123' }
+                                    
 
 # insert with generate password randomly
 $ passq create --title <title>
+Data created ✅ { id: 1, title: 'password', password: 'BIA%m)JJf4Y' }
 ```
 - Display a list of password or specific by id
 ```bash
 # display a list of password
 $ passq list --all
+Total: 2 data
+┌─────────┬────┬────────────┬───────────────┬───────────────────────┐
+│ (index) │ id │ title      │ password      │ last_updated          │
+├─────────┼────┼────────────┼───────────────┼───────────────────────┤
+│ 0       │ 1  │ 'password' │ 'admin123'    │ '2025-01-21 06:29:33' │
+│ 1       │ 2  │ 'password' │ 'BIA%m)JJf4Y' │ '2025-01-21 06:30:25' │
+└─────────┴────┴────────────┴───────────────┴───────────────────────┘
 
 # display specific by id
 $ passq list --id <id>
+Total: 1 data
+┌─────────┬────┬────────────┬────────────┬───────────────────────┐
+│ (index) │ id │ title      │ password   │ last_updated          │
+├─────────┼────┼────────────┼────────────┼───────────────────────┤
+│ 0       │ 1  │ 'password' │ 'admin123' │ '2025-01-21 06:29:33' │
+└─────────┴────┴────────────┴────────────┴───────────────────────┘
 ```
 - Delete a password
 ```bash
 # display a password by id
 $ passq delete --id <id>
-```
-- Copy a password
-```bash
-# copy a password by id
-$ passq copy --id <id>
+Data deleted ✅
 ```
 
 ## How secure is the generated password ?

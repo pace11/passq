@@ -1,4 +1,3 @@
-const clipboardy = require("clipboardy");
 const { db } = require("./connection.js");
 
 const generateDb = () => {
@@ -40,25 +39,6 @@ const getData = ({ id = "" }) => {
 
 /**
  *
- * @param {string} param.id
- */
-const copyData = ({ id = "" }) => {
-  db.all(`SELECT * FROM passwords WHERE id=${id}`, [], (err, rows) => {
-    if (err) {
-      console.error("Error getting data ❌", err.message);
-    } else {
-      if (rows.length > 0) {
-        clipboardy.writeSync(rows[0].password);
-        console.log("Text copied to clipboard ✅");
-      } else {
-        console.log("Not found data ❌");
-      }
-    }
-  });
-};
-
-/**
- *
  * @param {string} param.title
  * @param {string} param.password
  */
@@ -90,4 +70,4 @@ const deleteData = ({ id = "" }) => {
   });
 };
 
-module.exports = { generateDb, getData, copyData, createData, deleteData };
+module.exports = { generateDb, getData, createData, deleteData };
